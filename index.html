@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowthCollege: Your Tech Career Starts Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Growth<span>College</span></a>
+            <ul class="nav-menu">
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#model">Growth Model</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#outcomes">Outcomes</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#pricing" class="btn-nav">Apply Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1>Invest in Your <span class="highlight">Earning</span></h1>
+            <p class="subtitle">Gain in-demand tech skills in months, not years. Our proven Growth Model is designed to launch your new career—with or without upfront tuition.</p>
+            
+            <!-- Video Section -->
+            <div class="hero-video">
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline poster="images/video-poster.jpg">
+                            <source src="videos/video.mp4" type="video/mp4">
+                            <source src="videos/video.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <button class="video-play-btn" id="videoPlayBtn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons - MOVED OUTSIDE video container -->
+            <div class="cta-buttons">
+                <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                <a href="#pricing" class="btn btn-secondary">See Payment Plans</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Take Action Section -->
+    <section class="take-action">
+        <div class="container">
+            <div class="action-content">
+                <div class="action-text">
+                    <h2>Ready to Transform Your Career?</h2>
+                    <p>Don't just dream about your tech career—build it. Join hundreds of graduates earning 6-7 figures in their new roles.</p>
+                    <ul class="action-benefits">
+                        <li><i class="fas fa-check-circle"></i> <strong>Flexible Payment</strong> - Choose what works for your budget</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Expert Mentors</strong> - Learn from industry professionals</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Job Guarantee</strong> - Our commitment to your success</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Career Support</strong> - Lifetime alumni network access</li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <a href="#programs" class="btn btn-primary btn-large">Explore Programs</a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">View Pricing</a>
+                    <!-- <button a href="#cta-final" class="btn btn-outline btn-large" onclick="scheduleCall()">Schedule Free Call</button> -->
+                     <a href="#cta-final" class="btn btn-outline btn-large" onclick="scheduleCall()">Schedule Free Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+<section class="programs" id="programs">
+    <div class="container">
+        <h2 class="section-title">High-Demand Programs</h2>
+        <p class="section-subtitle">Choose your path. We provide the roadmap, support, and investment.</p>
+        
+        <div class="scroll-section">
+            <button class="scroll-btn scroll-left" aria-label="Scroll programs left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="programs-scroll-container scroll-container">
+                <div class="programs-grid">
+                    <!-- Original Tech Programs -->
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fas fa-code"></i></div>
+                        <h3>Full-Stack Web Development</h3>
+                        <p>Become a versatile developer. Learn HTML, CSS, JavaScript, React, Node.js, and databases.</p>
+                        <div class="program-tags">
+                            <span class="tag popular">Most Popular</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Space available <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Data Analytics & Visualization</h3>
+                        <p>Master Python, SQL, and Tableau to turn data into actionable insights and dashboards.</p>
+                        <div class="program-tags">
+                            <span class="tag beginner">Beginner-Friendly</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Class is full </a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>User Interface (UI) & User Experience (UX)</h3>
+                        <p>Learn user research, wireframing, and prototyping in Figma to design intuitive digital products.</p>
+                        <div class="program-tags">
+                            <span class="tag creative">Creative</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Class is full </a>
+                    </div>
+                    <!-- NEW: Financial Technology Programs -->
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fas fa-square-poll-vertical"></i></div>
+                        <h3>Forex Trading & Analysis</h3>
+                        <p>Master currency markets, technical analysis, and risk management to trade professionally.</p>
+                        <div class="program-tags">
+                            <span class="tag high-demand">High-Earning</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Space available <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fab fa-bitcoin"></i></div>
+                        <h3>Crypto & Web3 Fundamentals</h3>
+                        <p>Understand blockchain, DeFi, NFTs, and smart contracts. Build for the decentralized future.</p>
+                        <div class="program-tags">
+                            <span class="tag trending">Trending</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Class is full </a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Smart Contract Development</h3>
+                        <p>Learn Solidity and Ethereum development to build and audit secure smart contracts and dApps.</p>
+                        <div class="program-tags">
+                            <span class="tag advanced">Advanced</span>
+                            <span class="tag duration">6 Months</span>
+                        </div>
+                         <a href="#pricing" class="program-link">Class is full </a>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-btn scroll-right" aria-label="Scroll programs right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Growth Model Section -->
+    <section class="model" id="model">
+        <div class="container">
+            <h2 class="section-title">The GrowthCollege Model</h2>
+            <p class="section-subtitle">A proven path from beginner to hired professional.</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Learn By Building</h3>
+                    <p>No theoretical fluff. From day one, you'll build portfolio-ready projects that solve real problems.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Career-Ready</h3>
+                    <p>Master technical interviews, resume crafting, and LinkedIn optimization with dedicated coaches.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Land Your Role</h3>
+                    <p>Tap into our network of hiring partners and get direct introductions to tech employers.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Grow With Support</h3>
+                    <p>Even after hiring, access our alumni network and continued learning resources for life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Financial Path</h2>
+            <p class="section-subtitle">We're invested in your success. Pick the plan that fits your goals.</p>
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <h3>Pathfinder Plan</h3>
+                    <div class="price"><span class="amount">₦500K</span> Once</div>
+                    <p class="price-desc">Make one time payments for lower total cost. Aligns our success with yours.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> ₦500K one time tuition fee</li>
+                        <li><i class="fas fa-check"></i> This tuition covers you for 6 months</li>
+                        <li><i class="fas fa-check"></i> Total payment cap protects you</li>
+                        <li><i class="fas fa-check"></i> Full access to all learning resources</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="https://paystack.shop/pay/growthcollege" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="price-card featured">
+                    <div class="featured-badge">Most Flexible</div>
+                    <h3>Builder Plan</h3>
+                    <div class="price"><span class="amount">₦110K</span> Down</div>
+                    <p class="price-desc">Pay-as-you-go installments for lower initial cost, full ownership.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> ₦110K deposit to start</li>
+                        <li><i class="fas fa-check"></i> ₦110K/month for 6 months</li>
+                        <li><i class="fas fa-check"></i> Fixed total: ₦660K</li>
+                        <li><i class="fas fa-check"></i> Payments start on day one</li>
+                    </ul>
+                    <div class="pricing-actions">
+                        <a href="https://paystack.shop/pay/77ksezk-z8" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Students Win Section -->
+<section class="student-wins" id="outcomes">
+    <div class="container">
+        <h2 class="section-title">Students Win. Here's the Proof.</h2>
+        <p class="section-subtitle">Real outcomes from our graduates. See the career transformations our Growth Model enables.</p>
+
+        <!-- Key Metrics Bar -->
+        <div class="metrics-bar">
+            <div class="metric">
+                <div class="metric-number" data-target="93">0</div>
+                <div class="metric-label">Graduation Rate</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number" data-target="87">0</div>
+                <div class="metric-label">Hired Within 90 Days</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number" data-target="42">0</div>
+                <div class="metric-label">Avg. Salary Increase</div>
+                <div class="metric-suffix">%</div>
+            </div>
+            <div class="metric">
+                <div class="metric-number" data-target="4.8">0</div>
+                <div class="metric-label">Student Rating</div>
+                <div class="metric-suffix">/5.0</div>
+            </div>
+        </div>
+
+        <!-- Student Success Stories -->
+        <div class="success-stories">
+            <h3>Recent Success Stories</h3>
+            <div class="stories-grid">
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="student-avatar">SK</div>
+                        <div class="student-info">
+                            <h4>Sarah K.</h4>
+                            <p class="student-program">Full-Stack Development</p>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <p class="story-quote">"The 'Live Portfolio' mandate was a game-changer. I shipped two real client projects during the course, which became the centerpiece of my interviews."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <div class="outcome-label">Hired as</div>
+                                    <div class="outcome-value">Frontend Developer @ TechVault</div>
+                                </div>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <div class="outcome-label">Salary Increase</div>
+                                    <div class="outcome-value">+125%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="student-avatar">MJ</div>
+                        <div class="student-info">
+                            <h4>Marcus J.</h4>
+                            <p class="student-program">Crypto & Web3 Fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <p class="story-quote">"Learning from active protocol developers gave me insights you can't get from online tutorials. I went from zero to contributing to DAO proposals in 4 months."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <div class="outcome-label">Hired as</div>
+                                    <div class="outcome-value">Web3 Analyst @ ChainMetrics</div>
+                                </div>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <div class="outcome-label">Starting Salary</div>
+                                    <div class="outcome-value">$94,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="student-avatar">PL</div>
+                        <div class="student-info">
+                            <h4>Priya L.</h4>
+                            <p class="student-program">Data Analytics</p>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <p class="story-quote">"The cross-functional 'guild' project taught me how to communicate data insights to developers and business teams—exactly what employers need."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <div class="outcome-label">Promoted to</div>
+                                    <div class="outcome-value">Senior Data Analyst</div>
+                                </div>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <div class="outcome-label">Salary Increase</div>
+                                    <div class="outcome-value">+68%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Testimonial CTA -->
+        <!-- <div class="video-cta">
+            <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+                <p>Watch 2-minute success stories</p>
+            </div>
+            <div class="cta-note">
+                <h4>Hear directly from our graduates</h4>
+                <p>Real students share their journey from first day to first job offer in their new careers.</p>
+                <a href="#" class="btn btn-secondary">View All Success Stories</a>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Get clear answers to the most common questions about GrowthCollege.</p>
+
+        <div class="faq-container">
+            <!-- Category: Programs & Learning -->
+            <div class="faq-category">
+                <h3><i class="fas fa-graduation-cap"></i> Programs & Learning</h3>
+                <details class="faq-item">
+                    <summary>What are the prerequisites for your programs?</summary>
+                    <p>Most of our core programs are beginner-friendly! A strong willingness to learn, basic computer literacy, and dedication are the main requirements. For advanced tracks like Smart Contract Development, prior programming experience is recommended.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How many hours per week should I commit?</summary>
+                    <p>Our programs are intensive and immersive. To succeed, you should plan to dedicate <strong>20-25 hours per week</strong> to live sessions, project work, and independent study.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you provide career support?</summary>
+                    <p>Absolutely. Career readiness is built into our model. You'll get dedicated coaching on resumes, LinkedIn profiles, technical interview practice, and access to our network of hiring partners. Our goal is to support you until you land a role.</p>
+                </details>
+            </div>
+            
+            <!-- Category: Payment & Financing -->
+            <div class="faq-category">
+                <h3><i class="fas fa-credit-card"></i> Payment & Financing</h3>
+                <details class="faq-item">
+                    <summary>How does the Builder Plan work?</summary>
+                    <p>The Builder Plan is a straightforward installment plan. You secure your seat with a <strong>₦110K deposit</strong>, followed by <strong>6 monthly payments of ₦110K</strong>, for a fixed total cost of ₦660K. Payments start on your first day of class.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you offer scholarships or other payment options?</summary>
+                    <p>We periodically offer merit-based scholarships for exceptional applicants. We also have partnerships with vetted lending institutions. For more information on flexible options, please speak directly with our admissions advisors.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What is your refund policy?</summary>
+                    <p>We offer a risk-free initial period. If you withdraw within the first two weeks of your program, you will receive a full refund of your deposit and any installments paid.</p>
+                </details>
+            </div>
+
+            <!-- Category: Outcomes & Practical Details -->
+            <div class="faq-category">
+                <h3><i class="fas fa-chart-line"></i> Outcomes & Details</h3>
+                <details class="faq-item">
+                    <summary>What kind of jobs do graduates get?</summary>
+                    <p>Graduates land roles like <strong>Full-Stack Developer, Data Analyst, UI/UX Designer, Junior Blockchain Developer, and Trading Operations Analyst</strong>, among others. Your specific outcome depends on your chosen program, effort, and the market conditions at the time of graduation.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is the trading & crypto coursework financial advice?</summary>
+                    <p><strong>No.</strong> Our Forex and Crypto programs are designed to provide <strong>educational knowledge and analytical skills</strong>. They do not constitute financial advice, a guarantee of profits, or a promise of specific investment outcomes. Trading involves significant risk of loss.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do I need a specific computer or software?</summary>
+                    <p>You will need a reliable laptop (Mac, Windows, or Linux are all fine) and a stable internet connection. Specific software requirements (e.g., coding editors, Figma, trading simulators) will be provided before your program starts; much of it is free.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta-final" id="cta-final">
+        <div class="container">
+            <h2>Ready to Build Your Future?</h2>
+            <p>Book a 15-minute career consultation with an advisor. No commitment, just clarity.</p>
+            <!-- <form id="leadForm" class="cta-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="" disabled selected>Program of Interest</option>
+                    <option>Full-Stack Web Development</option>
+                    <option>Data Analytics</option>
+                    <option>UI/UX Design</option>
+                    <option>Forex Trading</option>
+                    <option>Crypto & Web3</option>
+                    <option>Smart Contracts</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Book Free Call <i class="fas fa-calendar-check"></i></button>
+            </form> -->
+            <a href="https://calendly.com/alivesamuel" class="btn btn-primary">Book Free Call</a>
+            <p class="form-note"><i class="fas fa-shield-alt"></i> We respect your privacy. No spam, ever.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="logo">Growth<span>College</span></a>
+                    <p>Where learning meets earning. Your tech career starts here.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> hello@growthcollege.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-LEARN</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 GrowthCollege. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
